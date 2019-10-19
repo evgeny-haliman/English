@@ -1,0 +1,11 @@
+version: '2'
+services:
+  english_club-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/English_Club/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=English_Club
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
